@@ -1,0 +1,19 @@
+{
+  "name": "reactfirstprj",
+  "version": "1.0.0",
+  "description": "The first React project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Graceliying82/firstReactProject.git"
+  },
+  "author": "GraceLiYing",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Graceliying82/firstReactProject/issues"
+  },
+  "homepage": "https://github.com/Graceliying82/firstReactProject#readme"
+}
