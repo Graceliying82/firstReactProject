@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Graceliying82/firstReactProject/issues"
   },
-  "homepage": "https://github.com/Graceliying82/firstReactProject#readme"
+  "homepage": "https://github.com/Graceliying82/firstReactProject#readme",
+  "dependencies": {
+    "react": "^16.12.0"
+  }
 }
