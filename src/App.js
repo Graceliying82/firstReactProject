@@ -1,26 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component} from 'react';
 import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import ComponentExample from './ComponentExample'
+import EventEx from './EventEx'
+import PropsEx1 from './PropsEx1'
+import PropsEx2 from './PropsEx2'
+class App extends Component {
+  state = {
+    foods: [
+      { name: 'apple', qty: 5, id: 1},
+      { name: 'chicken', qty: 4, id:2},
+      { name: 'bread', qty: 10, id:3}
+    ]
+  }
+  render() {
+    return (
+      <div className= "app-content"> 
+        <ComponentExample />
+        <br></br>
+        <EventEx></EventEx>
+        <br></br>
+        <PropsEx1 name="Abby" age="5"/>
+        <br></br>
+        <PropsEx2 foods={this.state.foods} />
+      </div>
+    )
+  };
+ }
 
 export default App;
