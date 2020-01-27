@@ -8,6 +8,8 @@ class PropsEx2 extends Component {
         <div className= "food" key= {food.id}> 
           <p>Name: { food.name }</p>
           <p>Qty: { food.qty }</p>
+      {/* () => will prevent the function been called on loading stage */} 
+          <button onClick={() => {this.props.deleteFood(food.id)}}>Delete</button>
         </div>
       )
     })
